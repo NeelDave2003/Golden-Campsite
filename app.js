@@ -25,7 +25,7 @@ const User = require("./models/user");
 const mongoSanitize = require("express-mongo-sanitize");
 const userRoutes = require("./routes/users");
 const dbUrl = "mongodb://localhost:27017/yelp-camp";
-const MongoDBStore = require("connect-mongo")("session");
+ 
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
 
