@@ -27,9 +27,7 @@ const userRoutes = require("./routes/users");
 const dbUrl = "mongodb://0.0.0.0:27017/yelp-camp";
  
 mongoose.connect(dbUrl, {
-  useNewUrlParser: true,
-
-  useUnifiedTopology: true,
+   
 });
 
 const db = mongoose.connection;
