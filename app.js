@@ -24,7 +24,7 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/user");
 const mongoSanitize = require("express-mongo-sanitize");
 const userRoutes = require("./routes/users");
-const dbUrl = "mongodb://localhost:27017/yelp-camp";
+const dbUrl = "mongodb://0.0.0.0:27017/yelp-camp";
  
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
